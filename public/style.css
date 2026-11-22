@@ -1,0 +1,31 @@
+body {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
+  font-family: Arial, sans-serif;
+}
+
+input, button {
+  margin: 4px;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 9px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+#message {
+  color: #b00020;
+}

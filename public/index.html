@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Records</h1>
+  <p>Add, search, update, and delete student information.</p>
+
+  <h2 id="form-title">Add Student</h2>
+  <form id="student-form">
+    <input name="name" placeholder="Student name" required>
+    <input name="rollNumber" placeholder="Roll number" required>
+    <input name="department" placeholder="Department" required>
+    <input name="year" type="number" min="1" max="10" placeholder="Year" required>
+    <button type="submit" id="save-button">Add Student</button>
+    <button type="button" id="cancel-button" hidden>Cancel edit</button>
+  </form>
+
+  <h2>Search Students</h2>
+  <form id="search-form">
+    <input name="rollNumber" placeholder="Roll number">
+    <input name="department" placeholder="Department">
+    <button type="submit">Search</button>
+    <button type="reset">Clear</button>
+  </form>
+
+  <h2>All Students</h2>
+  <p id="message"></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Roll Number</th><th>Department</th><th>Year</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="student-list"></tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>
